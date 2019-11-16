@@ -25,6 +25,7 @@
         android:layout_marginLeft="35dp"
         android:layout_marginTop="100dp"
         android:background="?attr/panelBackground"
+        android:focusable="auto"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/PH1" />
 
@@ -52,10 +53,15 @@
 
     <Button
         android:id="@+id/PB2"
+        style="@android:style/Widget.DeviceDefault.Button.Toggle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="130dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="110dp"
+        android:textColor="@color/colorPrimary"
         android:text="Magdalen College"
+        android:textColorHighlight="#8BC34A"
         app:layout_constraintStart_toStartOf="@+id/PB1"
         app:layout_constraintTop_toBottomOf="@+id/PB1" />
 
@@ -67,4 +73,22 @@
         android:text="Button"
         app:layout_constraintStart_toStartOf="@+id/PB2"
         app:layout_constraintTop_toBottomOf="@+id/PB2" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="We have a Game In the Campus"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/Magdalen_College"
+        app:layout_constraintTop_toTopOf="@+id/PB2" />
+
+
 </android.support.constraint.ConstraintLayout>
